@@ -1,35 +1,34 @@
-<!DOCTYPE html>   
+<!DOCTYPE html>  
 <html>  
-<head></head>
-<meta charset="UTF-8">  
-<script> 
-        let computerscore = 0; 
-        let userscore = 0; 
-        var computeroption = ['rock', 'scissors', 'paper'] 
-        let computerchoice = ''; 
-        let playerchoice = '';  
-        
-        function playround(){ 
-            let randomnum = Math.floor((Math.random()*4 + 1)) 
-            let computerchoice = computeroption[randomnum]; 
-            let playerchoice = prompt('Please pick rock, paper or scissors');  
-            if(computerchoice.toLowerCase == playerchoice.toLowerCase) { 
-                return "It is a draw";
-            }
-            else if (computeroption.indexOf(playerchoice) > computeroption.indexOf(computerchoice) && computerchoice.toLowerCase != 'paper' && playerchoice != paper) { 
-                    return "You win " +  playerchoice +  " beats" + computerchoice;
-            } 
-            else if (computeroption.indexOf(computerchoice) > computeroption.indexOf(playerchoice) && computerchoice.toLowerCase != 'paper' && playerchoice != paper) { 
-                    return "You lose " +  computerchoice +  " beats" + playerchoice;
-            }  
-            else if (computeroption.toLowerCase() == 'paper') { 
-                 return "You lose " +  computerchoice +  " beats" + playerchoice;
-            } 
-            else if (playeroption.toLowerCase() == 'paper') { 
-                return "You win " +  playerchoice +  " beats" + computerchoice;
-            }
-            
-        }
 
-</script>
+<head> 
+
+<title> 
+Rock Paper Scissors
+</title> 
+
+</head>  
+<body>
+
+
+<meta charset="UTF-8">   
+<div class = 'info'> 
+<h1 id = 'win'> 
+First to 5 points wins!
+</h1> 
+
+</div>
+<div class = 'scores'>
+<p id = 'AI'> AI Score : </p>
+<p id = 'User'> User Score :</p>
+</div> 
+<div class = 'buttons'> 
+<button  id = 'Rock' type='button'>Rock</button>
+<button  id = 'Paper' type='button'>Paper</button>  
+<button  id =  'Scissors' type='button'>Scissors</button>  
+<button  id = 'Restart' type = 'button'>Restart</button>
+
+</div> 
+<script src="main.js"></script> 
+</body> 
 </html>
