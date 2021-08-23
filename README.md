@@ -1,1 +1,2 @@
-Idk bruv
+Finished Rock Paper Scissors project
+
